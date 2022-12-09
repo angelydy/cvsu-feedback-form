@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+
+  .body-container {
+    display: flex;
+
+    .left-div {
+      height: 100vh;
+      width: 30%;
+      background-image: url(/assets/cvsu-lib.png);
+      position: relative;
+
+      .cvsu-logo {
+        width: 10em;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .green-overlay {
+        height: 100vh;
+        width: 100%;
+        background: #1B651BB2;
+      }
+
+      .cvsu-tagline {
+        font-weight: 800;
+        color: #FFFFFFB2;
+        opacity: 50%;
+        font-size: 4vw;
+        position: absolute;
+        top: 77%;
+        left: 50%;
+        transform: translate(-47%, -50%);
+        width: 30vw;
+        line-height: 6vw;
+      }
+    }
+  
+    .right-div {
+      height: 100vh;
+      position: relative;
+      width: 70%;
+
+      .cvsu-logo02 {
+        width: 15em;
+        position: absolute;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%, 0%);
+      }
+
+      form {
+        .page2, .page3, .page4, .page5 {
+          display: none;
+        }
+      }
+    }
+  }
+}
