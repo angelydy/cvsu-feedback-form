@@ -68,6 +68,16 @@ body .body-container .right-div .form-area {
   font-size: 1vw;
   letter-spacing: 0.145em;
   color: #FEB04D;
+  text-align: center;
+  padding-top: 30vh;
+}
+
+body .body-container .right-div form {
+  color: #1B651B;
+}
+
+body .body-container .right-div form input {
+  margin: 1em;
 }
 
 body .body-container .right-div form .page2, body .body-container .right-div form .page3, body .body-container .right-div form .page4, body .body-container .right-div form .page5 {
@@ -75,11 +85,29 @@ body .body-container .right-div form .page2, body .body-container .right-div for
 }
 
 body .body-container .right-div form h1 {
+  text-align: center;
   font-weight: 800;
   font-size: 3vw;
   color: #1B651B;
-  margin-top: 5%;
-  margin-left: 5%;
   font-family: 'Nanum Myeongjo', serif;
+}
+
+body .body-container .right-div form .choices-container {
+  width: 15em;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+}
+
+body .body-container .right-div form .choices-container .page-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 1em;
+}
+
+body .body-container .right-div form .choices-container .page-nav button {
+  margin: auto;
 }
 /*# sourceMappingURL=libraryFeedbackForm.css.map */

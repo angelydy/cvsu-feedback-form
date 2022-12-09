@@ -61,20 +61,43 @@ body {
         font-size: 1vw;
         letter-spacing: 0.145em;
         color: #FEB04D;
+        text-align: center;
+        padding-top: 30vh;
       }
-
+      
       form {
+        color: #1B651B;
+
+        input {
+          margin: 1em;
+        }
+
         .page2, .page3, .page4, .page5 {
           display: none;
         }
 
         h1 {
+          text-align: center;
           font-weight: 800;
           font-size: 3vw;
           color: #1B651B;
-          margin-top: 5%;
-          margin-left: 5%;
           font-family: 'Nanum Myeongjo', serif;
+        }
+
+        .choices-container {    
+          width: 15em;
+          position: absolute;
+          left: 50%;
+          transform: translate(-50%, 0%);
+
+          .page-nav {
+            display: flex;
+            margin-top: 1em;
+            
+            button {
+              margin: auto;
+            }
+          }
         }
       }
     }
