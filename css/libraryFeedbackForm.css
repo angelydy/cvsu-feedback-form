@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@800&display=swap");
 body {
   margin: 0;
   padding: 0;
@@ -62,7 +63,23 @@ body .body-container .right-div .cvsu-logo02 {
           transform: translate(-50%, 0%);
 }
 
+body .body-container .right-div .form-area {
+  font-weight: 700;
+  font-size: 1vw;
+  letter-spacing: 0.145em;
+  color: #FEB04D;
+}
+
 body .body-container .right-div form .page2, body .body-container .right-div form .page3, body .body-container .right-div form .page4, body .body-container .right-div form .page5 {
   display: none;
+}
+
+body .body-container .right-div form h1 {
+  font-weight: 800;
+  font-size: 3vw;
+  color: #1B651B;
+  margin-top: 5%;
+  margin-left: 5%;
+  font-family: 'Nanum Myeongjo', serif;
 }
 /*# sourceMappingURL=libraryFeedbackForm.css.map */

@@ -20,100 +20,73 @@
     </div>
     <div class="right-div">    
       <img src="/assets/cvsu-logo02.png" alt="" class="cvsu-logo02">
-      <form>
-        <p class="form-area"> LIBRARY  |  AREA OF CONCERN: </p>
+      <div class="form-area">
+        LIBRARY  |  AREA OF CONCERN:
+      </div>
+
+      <form id="questionnaire-form">
+
         <div class="page1" id="page-1">
           <h1>Quality of accommodation</h1>
-          <input type="radio" name="question1" value="HighlySatisfied" checked /> Highly Satisfied
-          <br>
-          <input type="radio" name="question1" value="satisfied" /> Satisfied
-          <br>
-          <input type="radio" name="question1" value="ModeratelySatisfied" /> Moderately Satisfied
-          <br>
-          <input type="radio" name="question1" value="SlightlySatisfied" /> Slightly Satisfied
-          <br>
-          <input type="radio" name="question1" value="NotSatisfied" /> Not Satisfied
-          <br>
+          <input type="radio" name="question1" value="HighlySatisfied" checked> Highly Satisfied<br>
+          <input type="radio" name="question1" value="satisfied"> Satisfied<br>
+          <input type="radio" name="question1" value="ModeratelySatisfied"> Moderately Satisfied<br>
+          <input type="radio" name="question1" value="SlightlySatisfied"> Slightly Satisfied<br>
+          <input type="radio" name="question1" value="NotSatisfied"> Not Satisfied<br>
           <div class="page-nav">
-            <button type="button" onclick="validateForm()">Next</button>
+            <button type="button" onclick="showNextPage()">Next</button>
           </div>
         </div>
-      </form>
 
-      <form>
         <div class="page2" id="page-2">
           <h1>Quality of assistance provided</h1>
-          <input type="radio" name="question1" value="HighlySatisfied" checked /> Highly Satisfied
-          <br>
-          <input type="radio" name="question1" value="satisfied" /> Satisfied
-          <br>
-          <input type="radio" name="question1" value="ModeratelySatisfied" /> Moderately Satisfied
-          <br>
-          <input type="radio" name="question1" value="SlightlySatisfied" /> Slightly Satisfied
-          <br>
-          <input type="radio" name="question1" value="NotSatisfied" /> Not Satisfied
-          <br>
+          <input type="radio" name="question2" value="HighlySatisfied" checked> Highly Satisfied<br>
+          <input type="radio" name="question2" value="satisfied"> Satisfied<br>
+          <input type="radio" name="question2" value="ModeratelySatisfied"> Moderately Satisfied<br>
+          <input type="radio" name="question2" value="SlightlySatisfied"> Slightly Satisfied<br>
+          <input type="radio" name="question2" value="NotSatisfied"> Not Satisfied<br>
           <div class="page-nav">
             <button type="button" onclick="showPreviousPage()">Back</button>
-            <button type="button" onclick="validateForm()">Next</button>
+            <button type="button" onclick="showNextPage()">Next</button>
           </div>
         </div>
-      </form>
 
-      <form>
         <div class="page3" id="page-3">
           <h1>Courtesy of staff</h1>
-          <input type="radio" name="question1" value="HighlySatisfied" checked /> Highly Satisfied
-          <br>
-          <input type="radio" name="question1" value="satisfied" /> Satisfied
-          <br>
-          <input type="radio" name="question1" value="ModeratelySatisfied" /> Moderately Satisfied
-          <br>
-          <input type="radio" name="question1" value="SlightlySatisfied" /> Slightly Satisfied
-          <br>
-          <input type="radio" name="question1" value="NotSatisfied" /> Not Satisfied
-          <br>
+          <input type="radio" name="question3" value="HighlySatisfied" checked> Highly Satisfied<br>
+          <input type="radio" name="question3" value="satisfied"> Satisfied<br>
+          <input type="radio" name="question3" value="ModeratelySatisfied"> Moderately Satisfied<br>
+          <input type="radio" name="question3" value="SlightlySatisfied"> Slightly Satisfied<br>
+          <input type="radio" name="question3" value="NotSatisfied"> Not Satisfied<br>
           <div class="page-nav">
             <button type="button" onclick="showPreviousPage()">Back</button>
-            <button type="button" onclick="validateForm()">Next</button>
+            <button type="button" onclick="showNextPage()">Next</button>
           </div>
         </div>
-      </form>
 
-        <form>
-          <div class="page4" id="page-4">
-            <h1>Responsiveness</h1>
-            <input type="radio" name="question1" value="HighlySatisfied" checked/> Highly Satisfied
-            <br>
-            <input type="radio" name="question1" value="satisfied" /> Satisfied
-            <br>
-            <input type="radio" name="question1" value="ModeratelySatisfied" /> Moderately Satisfied
-            <br>
-            <input type="radio" name="question1" value="SlightlySatisfied" /> Slightly Satisfied
-            <br>
-            <input type="radio" name="question1" value="NotSatisfied" /> Not Satisfied
-            <br>
-            <div class="page-nav">
-              <button type="button" onclick="showPreviousPage()">Back</button>
-              <button type="button" onclick="validateForm()">Next</button>
-            </div>
+        <div class="page4" id="page-4">
+          <h1>Responsiveness</h1>
+          <input type="radio" name="question4" value="HighlySatisfied" checked> Highly Satisfied<br>
+          <input type="radio" name="question4" value="satisfied"> Satisfied<br>
+          <input type="radio" name="question4" value="ModeratelySatisfied"> Moderately Satisfied<br>
+          <input type="radio" name="question4" value="SlightlySatisfied"> Slightly Satisfied<br>
+          <input type="radio" name="question4" value="NotSatisfied"> Not Satisfied<br>
+          <div class="page-nav">
+            <button type="button" onclick="showPreviousPage()">Back</button>
+            <button type="button" onclick="showNextPage()">Next</button>
           </div>
-        </form>
+        </div>
 
-       <form>
         <div class="page5" id="page-5">
           <h1>Preparedness</h1>
-          <input type="radio" name="question1" value="HighlySatisfied" checked/> Highly Satisfied
-          <br>
-          <input type="radio" name="question1" value="satisfied" /> Satisfied
-          <br>
-          <input type="radio" name="question1" value="ModeratelySatisfied" /> Moderately Satisfied
-          <br>
-          <input type="radio" name="question1" value="SlightlySatisfied" /> Slightly Satisfied
-          <br>
-          <input type="radio" name="question1" value="NotSatisfied" /> Not Satisfied
-          <br>
-          <button type="submit">Submit</button>
+          <input type="radio" name="question5" value="HighlySatisfied" checked> Highly Satisfied<br>
+          <input type="radio" name="question5" value="satisfied"> Satisfied<br>
+          <input type="radio" name="question5" value="ModeratelySatisfied"> Moderately Satisfied<br>
+          <input type="radio" name="question5" value="SlightlySatisfied"> Slightly Satisfied<br>
+          <input type="radio" name="question5" value="NotSatisfied"> Not Satisfied<br>
+          <div class="page-nav">
+            <button type="submit">Submit</button>
+          </div>
         </div>
       </form>
     </div>
