@@ -14,6 +14,8 @@ body {
       width: 30%;
       background-image: url(/assets/cvsu-lib.png);
       position: relative;
+      background-repeat: no-repeat;
+      background-size: cover;
 
       .cvsu-logo {
         width: 10em;
@@ -33,13 +35,10 @@ body {
         font-weight: 800;
         color: #FFFFFFB2;
         opacity: 50%;
-        font-size: 4vw;
-        position: absolute;
-        top: 77%;
-        left: 50%;
-        transform: translate(-47%, -50%);
-        width: 30vw;
-        line-height: 6vw;
+        font-size: 3.5em;
+        position: fixed;
+        bottom: 0;
+        left: 0;
       }
     }
   
