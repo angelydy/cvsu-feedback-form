@@ -24,7 +24,7 @@
         LIBRARY  |  AREA OF CONCERN:
       </div>
       
-      <form id="questionnaire-form">
+      <form id="questionnaire-form" action="">
         <div class="page1" id="page-1">
           <h1>Quality of accommodation</h1>
           <div class="choices-container">
@@ -34,7 +34,10 @@
             <input type="radio" name="question1" value="SlightlySatisfied"> Slightly Satisfied<br>
             <input type="radio" name="question1" value="NotSatisfied"> Not Satisfied<br>
             <div class="page-nav">
-              <button type="button" onclick="showNextPage()">Next</button>
+              <div class="pageNum">
+                Page 1 of 6
+              </div>
+              <button type="button" onclick="showNextPage()" class="forward"></button>
             </div>
           </div>
         </div>
@@ -48,8 +51,11 @@
             <input type="radio" name="question2" value="SlightlySatisfied"> Slightly Satisfied<br>
             <input type="radio" name="question2" value="NotSatisfied"> Not Satisfied<br>
             <div class="page-nav">
-              <button type="button" onclick="showPreviousPage()">Back</button>
-              <button type="button" onclick="showNextPage()">Next</button>
+              <button type="button" onclick="showPreviousPage()" class="backward"></button>
+              <div class="pageNum">
+                Page 2 of 6
+              </div>
+              <button type="button" onclick="showNextPage()" class="forward"></button>
             </div>
           </div>
         </div>
@@ -63,8 +69,11 @@
             <input type="radio" name="question3" value="SlightlySatisfied"> Slightly Satisfied<br>
             <input type="radio" name="question3" value="NotSatisfied"> Not Satisfied<br>
             <div class="page-nav">
-              <button type="button" onclick="showPreviousPage()">Back</button>
-              <button type="button" onclick="showNextPage()">Next</button>
+              <button type="button" onclick="showPreviousPage()" class="backward"></button>
+              <div class="pageNum">
+                Page 3 of 6
+              </div>
+              <button type="button" onclick="showNextPage()" class="forward"></button>
             </div>
           </div>
         </div>
@@ -78,8 +87,11 @@
             <input type="radio" name="question4" value="SlightlySatisfied"> Slightly Satisfied<br>
             <input type="radio" name="question4" value="NotSatisfied"> Not Satisfied<br>
             <div class="page-nav">
-              <button type="button" onclick="showPreviousPage()">Back</button>
-              <button type="button" onclick="showNextPage()">Next</button>
+              <button type="button" onclick="showPreviousPage()" class="backward"></button>
+              <div class="pageNum">
+                Page 4 of 6
+              </div>
+              <button type="button" onclick="showNextPage()" class="forward"></button>
             </div>
           </div>
         </div>
@@ -93,6 +105,9 @@
             <input type="radio" name="question5" value="SlightlySatisfied"> Slightly Satisfied<br>
             <input type="radio" name="question5" value="NotSatisfied"> Not Satisfied<br>
             <div class="page-nav">
+              <div class="pageNum">
+                Page 5 of 6
+              </div>
               <button type="submit">Submit</button>
             </div>
           </div>
