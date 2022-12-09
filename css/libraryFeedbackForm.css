@@ -65,7 +65,7 @@ body .body-container .right-div .cvsu-logo02 {
 
 body .body-container .right-div .form-area {
   font-weight: 700;
-  font-size: 1vw;
+  font-size: 0.8em;
   letter-spacing: 0.145em;
   color: #FEB04D;
   text-align: center;
@@ -91,7 +91,7 @@ body .body-container .right-div form .page2, body .body-container .right-div for
 body .body-container .right-div form h1 {
   text-align: center;
   font-weight: 800;
-  font-size: 3vw;
+  font-size: 2.5em;
   color: #1B651B;
   font-family: 'Nanum Myeongjo', serif;
 }
@@ -119,6 +119,7 @@ body .body-container .right-div form .choices-container .page-nav .forward {
   background-size: 100%;
   width: 2em;
   height: 2em;
+  cursor: pointer;
 }
 
 body .body-container .right-div form .choices-container .page-nav .backward {
@@ -129,14 +130,36 @@ body .body-container .right-div form .choices-container .page-nav .backward {
   background-size: 100%;
   width: 2em;
   height: 2em;
+  cursor: pointer;
 }
 
 body .body-container .right-div form .choices-container .page-nav .pageNum {
   font-size: 12px;
   margin: auto;
+  font-weight: bold;
 }
 
 body .body-container .right-div form .choices-container .page-nav button {
   margin: auto;
+}
+
+body .body-container .right-div .socialIcons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding-right: 2em;
+  padding-bottom: 1em;
+}
+
+body .body-container .right-div .socialIcons img {
+  margin: 0.5em;
+}
+
+body .body-container .right-div .socialIcons img:hover {
+  opacity: 0.5;
+  cursor: pointer;
 }
 /*# sourceMappingURL=libraryFeedbackForm.css.map */
