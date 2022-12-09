@@ -57,7 +57,7 @@ body .body-container .right-div {
 body .body-container .right-div .cvsu-logo02 {
   width: 15em;
   position: absolute;
-  top: 0%;
+  top: 2%;
   left: 50%;
   -webkit-transform: translate(-50%, 0%);
           transform: translate(-50%, 0%);
