@@ -60,6 +60,7 @@ body .modal-content .modal-btns {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-top: 2em;
 }
 
 body .modal-content .modal-btns button {
@@ -77,6 +78,11 @@ body .modal-content .modal-btns button {
   border-width: 2px;
   border-style: solid;
   cursor: pointer;
+}
+
+body .modal-content .modal-btns button:hover {
+  background-color: #1B651B;
+  color: white;
 }
 
 body .close {

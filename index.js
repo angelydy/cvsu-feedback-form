@@ -1,9 +1,16 @@
 var currentQuestion = 1;
 function submitBtnClick() {
-  // Show the modal
-  document.getElementById("myModal").style.display = "block";
-  //blur the background
-  document.getElementById("body-container").style.filter = "blur(5px)";
+  // Show the modal only if the user answered the the email and number inputs
+  var emailInput = document.getElementById("email-input").value;
+  var numberInput = document.getElementById("number-input").value;
+  if (emailInput == "" || numberInput == "") {
+    //alert answer all required questions
+    alert("Please answer all required questions");
+  } else {
+    document.getElementById("myModal").style.display = "block";
+    //blur the background
+    document.getElementById("body-container").style.filter = "blur(5px)";
+  }
 }
 
 function noBtnClick() {
