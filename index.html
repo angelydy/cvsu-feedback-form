@@ -10,7 +10,18 @@
   <link rel="shortcut icon" href="/assets/cvsu-logo.png" type="image/x-icon">
 </head>
 <body>
-  <div class="body-container">
+  <div class="modal" id="myModal">
+    <div class="modal-content">
+      <div class="green-rectangle"></div>
+      <p>Are you sure you want to <br> submit this form?</p>
+      <div class="modal-btns">
+        <button class="modal-button" id="yes-button" onclick="yesBtnClick()">Yes</button>
+        <button class="modal-button" id="no-button" onclick="noBtnClick()">No</button>
+      </div>
+    </div>
+  </div>  
+
+  <div class="body-container" id="body-container">
     <div class="left-div">
       <img src="/assets/cvsu-logo.png" alt="" class="cvsu-logo">
       <div class="green-overlay"></div>
@@ -120,15 +131,15 @@
             <textarea name="" id="" placeholder="Your comments/suggestions will greatly help us improve our service" class="comments"></textarea>
             <textarea name="" id="" placeholder="Full Name (optional)" class="name"></textarea>
             <div class="email-num">
-              <input type="email" name="" id="" placeholder="CVSU Email Address">
-              <input type="number" name="" id="" placeholder="Student Number">
+              <input type="email" name="" id="" placeholder="CVSU Email Address" required>
+              <input type="number" name="" id="" placeholder="Student Number" required>
             </div>
             <div class="page-nav">
               <button type="button" onclick="showPreviousPage()" class="backward"></button>
               <div class="pageNum">
                 Page 6 of 6
               </div>
-              <button type="submit" class="submitBtn">Submit</button>
+              <button type="button" class="submitBtn" id="submit-button" onclick="submitBtnClick()">Submit</button>
             </div>
           </div>
         </div>

@@ -4,7 +4,93 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
+  position: relative;
+  /* Modal Content */
+  /* The Close Button */
   /* Firefox */
+}
+
+body .modal {
+  display: none;
+  /* hidden by default */
+  position: fixed;
+  /* stay in place */
+  z-index: 1;
+  /* sit on top */
+  width: 100%;
+  /* full width */
+  height: 100%;
+  /* full height */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* black w/ opacity */
+}
+
+body .modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  border: 1px solid #888;
+  width: 25em;
+  height: 13em;
+  border-radius: 8px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+body .modal-content .green-rectangle {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  background-color: #1B651B;
+  width: 100%;
+  height: 3em;
+}
+
+body .modal-content p {
+  padding-top: 1em;
+  text-align: center;
+  font-family: 'NanumMyeongjo', serif;
+  font-weight: bold;
+}
+
+body .modal-content .modal-btns {
+  margin: auto;
+  width: 10em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .modal-content .modal-btns button {
+  width: 5em;
+  height: 2.5em;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.8em;
+  color: black;
+  text-align: center;
+  margin: 0 0.5em;
+  font-family: 'NanumMyeongjo', serif;
+  background-color: white;
+  border-color: #E1E1E1;
+  border-width: 2px;
+  border-style: solid;
+  cursor: pointer;
+}
+
+body .close {
+  color: #1B651B;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+body .close:hover,
+body .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 body textarea, body input {
