@@ -152,7 +152,6 @@ body .body-container .right-div form .suggestions-container .email-num {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 0.5em;
   width: 27em;
 }
 
