@@ -4,6 +4,26 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
+  /* Firefox */
+}
+
+body textarea, body input {
+  resize: none;
+  outline: none;
+}
+
+body textarea:focus, body input:focus {
+  outline: none;
+}
+
+body input::-webkit-outer-spin-button,
+body input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+body input[type=number] {
+  -moz-appearance: textfield;
 }
 
 body .body-container {
@@ -82,7 +102,7 @@ body .body-container .right-div form input:checked {
   font-weight: bold;
 }
 
-body .body-container .right-div form .page2, body .body-container .right-div form .page3, body .body-container .right-div form .page4, body .body-container .right-div form .page5 {
+body .body-container .right-div form .page2, body .body-container .right-div form .page3, body .body-container .right-div form .page4, body .body-container .right-div form .page5, body .body-container .right-div form .page6 {
   display: none;
 }
 
@@ -94,22 +114,56 @@ body .body-container .right-div form h1 {
   font-family: 'Nanum Myeongjo', serif;
 }
 
-body .body-container .right-div form .choices-container {
-  width: 15em;
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translate(-50%, 10%);
-          transform: translate(-50%, 10%);
+body .body-container .right-div form .suggestions-container {
+  margin: auto;
+  width: 25em;
+  max-width: 40em;
 }
 
-body .body-container .right-div form .choices-container .page-nav {
+body .body-container .right-div form .suggestions-container input {
+  margin: 0;
+  border-radius: 8px;
+  border-color: #E1E1E1;
+  border-width: 2px;
+  border-style: solid;
+  padding: 1em;
+}
+
+body .body-container .right-div form .suggestions-container textarea {
+  border-color: #E1E1E1;
+  width: 100%;
+  margin: auto;
+  padding-bottom: 1em;
+  border-radius: 8px;
+  padding: 1em;
+  border-style: solid;
+  border-width: 2px;
+  font-family: 'Poppins', sans-serif;
+}
+
+body .body-container .right-div form .suggestions-container .comments {
+  height: 8em;
+}
+
+body .body-container .right-div form .suggestions-container .email-num {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 0.5em;
+  width: 27em;
+}
+
+body .body-container .right-div form .page-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 2em;
 }
 
-body .body-container .right-div form .choices-container .page-nav .forward {
+body .body-container .right-div form .page-nav .forward {
   border: none;
   background-color: transparent;
   background-image: url(/assets/Forward.svg);
@@ -120,7 +174,7 @@ body .body-container .right-div form .choices-container .page-nav .forward {
   cursor: pointer;
 }
 
-body .body-container .right-div form .choices-container .page-nav .backward {
+body .body-container .right-div form .page-nav .backward {
   border: none;
   background-color: transparent;
   background-image: url(/assets/Back.svg);
@@ -131,14 +185,46 @@ body .body-container .right-div form .choices-container .page-nav .backward {
   cursor: pointer;
 }
 
-body .body-container .right-div form .choices-container .page-nav .pageNum {
+body .body-container .right-div form .page-nav .pageNum {
   font-size: 12px;
   margin: auto;
   font-weight: bold;
 }
 
-body .body-container .right-div form .choices-container .page-nav button {
+body .body-container .right-div form .page-nav button {
   margin: auto;
+}
+
+body .body-container .right-div form .choices-container {
+  width: 15em;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, 10%);
+          transform: translate(-50%, 10%);
+}
+
+body .body-container .right-div form .choices-container .comments {
+  width: 30em;
+  margin: auto;
+}
+
+body .body-container .right-div .submitBtn {
+  background-color: #FEB04D;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #1B651B;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5em;
+  width: 10em;
+}
+
+body .body-container .right-div .submitBtn:hover {
+  cursor: pointer;
+  color: #FEB04D;
+  background-color: #1B651B;
+  -webkit-transition: ease-in-out;
+  transition: ease-in-out;
 }
 
 body .body-container .right-div .socialIcons {

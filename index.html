@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CVSU Feedback Form </title>
+  <title>CVSU Feedback Form - Library</title>
   <link rel="stylesheet" href="/css/libraryFeedbackForm.css">
   <script src="/index.js"></script>
   <link rel="shortcut icon" href="/assets/cvsu-logo.png" type="image/x-icon">
@@ -105,15 +105,35 @@
             <input type="radio" name="question5" value="SlightlySatisfied"> Slightly Satisfied<br>
             <input type="radio" name="question5" value="NotSatisfied"> Not Satisfied<br>
             <div class="page-nav">
+              <button type="button" onclick="showPreviousPage()" class="backward"></button>
               <div class="pageNum">
                 Page 5 of 6
               </div>
-              <button type="submit" class="forward"></button>
+              <button type="button" onclick="showNextPage()" class="forward"></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="page6" id="page-6">
+          <h1>We'd love to hear from you!</h1>
+          <div class="suggestions-container">
+            <textarea name="" id="" placeholder="Your comments/suggestions will greatly help us improve our service" class="comments"></textarea>
+            <textarea name="" id="" placeholder="Full Name (optional)" class="name"></textarea>
+            <div class="email-num">
+              <input type="email" name="" id="" placeholder="CVSU Email Address">
+              <input type="number" name="" id="" placeholder="Student Number">
+            </div>
+            <div class="page-nav">
+              <button type="button" onclick="showPreviousPage()" class="backward"></button>
+              <div class="pageNum">
+                Page 6 of 6
+              </div>
+              <button type="submit" class="submitBtn">Submit</button>
             </div>
           </div>
         </div>
       </form>
-
+      
       <div class="socialIcons">
         <img src="/assets/Facebook.svg" alt="">
         <img src="/assets/Youtube.svg" alt="">

@@ -6,6 +6,26 @@ body {
   padding: 0;
   font-family: 'Poppins', sans-serif;
 
+  textarea, input {
+    resize: none;
+    outline: none;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
   .body-container {
     display: flex;
 
@@ -75,7 +95,7 @@ body {
           }
         }
 
-        .page2, .page3, .page4, .page5 {
+        .page2, .page3, .page4, .page5, .page6 {
           display: none;
         }
 
@@ -87,48 +107,109 @@ body {
           font-family: 'Nanum Myeongjo', serif;
         }
 
+        .suggestions-container {
+          margin: auto;
+          width: 25em;
+          max-width: 40em;
+
+          input {
+            margin: 0;
+            border-radius: 8px;
+            border-color: #E1E1E1;
+            border-width: 2px;
+            border-style: solid;
+            padding: 1em;
+          }
+
+          textarea {
+            border-color: #E1E1E1;
+            width: 100%;
+            margin: auto;
+            padding-bottom: 1em;
+            border-radius: 8px;
+            padding: 1em;
+            border-style: solid;
+            border-width: 2px;
+            font-family: 'Poppins', sans-serif;
+          }
+
+          .comments {
+            height: 8em;
+          }
+
+          .email-num {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 0.5em;
+            width: 27em;
+          }
+        }
+
+        .page-nav {
+          display: flex;
+          margin-top: 2em;
+
+          .forward {
+            border: none;
+            background-color: transparent;
+            background-image: url(/assets/Forward.svg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            width: 2em;
+            height: 2em;
+            cursor: pointer;
+          }
+
+          .backward {
+            border: none;
+            background-color: transparent;
+            background-image: url(/assets/Back.svg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            width: 2em;
+            height: 2em;
+            cursor: pointer;
+          }
+
+          .pageNum {
+            font-size: 12px;
+            margin: auto;
+            font-weight: bold;
+          }
+            
+          button {
+            margin: auto;
+          }
+        }
+
         .choices-container {    
           width: 15em;
           position: absolute;
           left: 50%;
           transform: translate(-50%, 10%);
 
-          .page-nav {
-            display: flex;
-            margin-top: 2em;
-
-            .forward {
-              border: none;
-              background-color: transparent;
-              background-image: url(/assets/Forward.svg);
-              background-repeat: no-repeat;
-              background-size: 100%;
-              width: 2em;
-              height: 2em;
-              cursor: pointer;
-            }
-
-            .backward {
-              border: none;
-              background-color: transparent;
-              background-image: url(/assets/Back.svg);
-              background-repeat: no-repeat;
-              background-size: 100%;
-              width: 2em;
-              height: 2em;
-              cursor: pointer;
-            }
-
-            .pageNum {
-              font-size: 12px;
-              margin: auto;
-              font-weight: bold;
-            }
-              
-            button {
-              margin: auto;
-            }
+          .comments {
+            width: 30em;
+            margin: auto;
           }
+        }
+      }
+
+      .submitBtn {
+        background-color: #FEB04D;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        color:#1B651B;
+        border: none;
+        border-radius: 8px;
+        padding: 0.5em;
+        width: 10em;
+
+        &:hover {
+          cursor: pointer;
+          color: #FEB04D;
+          background-color: #1B651B;
+          transition: ease-in-out;
         }
       }
 
