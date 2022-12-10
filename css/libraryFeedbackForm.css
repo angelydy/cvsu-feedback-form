@@ -293,7 +293,7 @@ body .body-container .right-div form .choices-container .comments {
   margin: auto;
 }
 
-body .body-container .right-div .submitBtn {
+body .body-container .right-div .agileinfo {
   background-color: #FEB04D;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
@@ -304,7 +304,7 @@ body .body-container .right-div .submitBtn {
   width: 10em;
 }
 
-body .body-container .right-div .submitBtn:hover {
+body .body-container .right-div .agileinfo:hover {
   cursor: pointer;
   color: #FEB04D;
   background-color: #1B651B;
