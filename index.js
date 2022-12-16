@@ -20,4 +20,4 @@ var slideIndex = 1;
   // Automatic image switching
   setInterval(function() {
     plusSlides(1);
-  }, 4000); 
+  }, 3000); 
