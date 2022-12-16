@@ -1,52 +1,23 @@
-var currentQuestion = 1;
-function submitBtnClick() {
-  // Show the modal only if the user answered the the email and number inputs
-  var emailInput = document.getElementById("email-input").value;
-  var numberInput = document.getElementById("number-input").value;
-  if (emailInput == "" || numberInput == "") {
-    //alert answer all required questions
-    alert("Please answer all required questions");
-  } else {
-    document.getElementById("myModal").style.display = "block";
-    //blur the background
-    document.getElementById("body-container").style.filter = "blur(5px)";
+var slideIndex = 1;
+  showSlides(slideIndex);
+
+  // Next/previous controls
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
   }
-}
 
-function noBtnClick() {
-  // Hide the modal
-  document.getElementById("myModal").style.display = "none";
-  
-  document.getElementById("body-container").style.filter = "blur(0px)";
-}
+  function showSlides(n) {
+    var i;
+    var slides = document.querySelectorAll(".images-carousel");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slides[slideIndex-1].style.display = "block";
+  }
 
-function yesBtnClick() {
-  // Hide the modal
-  document.getElementById("myModal").style.display = "none";
-  // Hide the current question
-  document.getElementById("page-" + currentQuestion).style.display = "none";
-  // Show the first question
-  currentQuestion = 1;
-  document.getElementById("page-" + currentQuestion).style.display = "block";
-  //submit the form
-  document.getElementById("questionnaire-form").submit();
-}
-
-function showNextPage() {
-  //Hide the current question  
-  document.getElementById("page-" + currentQuestion).style.display = "none";
-  // Show the next question
-  currentQuestion++;
-  document.getElementById("page-" + currentQuestion).style.display = "block";  
-}
-
-function showPreviousPage() {
-  // Hide the current question
-  document.getElementById("page-" + currentQuestion).style.display = "none";
-
-  // Show the previous question
-  currentQuestion--;
-  document.getElementById("page-" + currentQuestion).style.display = "block";
-}
-
-
+  // Automatic image switching
+  setInterval(function() {
+    plusSlides(1);
+  }, 4000); 
