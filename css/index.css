@@ -230,7 +230,7 @@ body .main-container .who-we-are {
 }
 
 body .main-container .who-we-are .left {
-  width: 40%;
+  width: 50%;
 }
 
 body .main-container .who-we-are .left h1 {
@@ -270,10 +270,11 @@ body footer {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   background-color: #FEB04D;
-  flex-wrap: wrap;
 }
 
 body footer .footer-wrapper {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

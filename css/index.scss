@@ -191,7 +191,7 @@ body {
       justify-content: space-between;
 
       .left {
-        width: 40%;
+        width: 50%;
         h1 {
           font-family: 'NanumMyeongjo', serif;
           color: #1B651B;
@@ -231,9 +231,9 @@ body {
     margin-top: 10em;
     flex-wrap: wrap;
     background-color: #FEB04D;
-    flex-wrap: wrap;
     
     .footer-wrapper {
+      flex-wrap: wrap;
       display: flex;
       justify-content: space-between;
       margin-left: 6vw;
