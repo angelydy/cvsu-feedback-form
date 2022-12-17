@@ -1,19 +1,15 @@
-  const searchInput = document.querySelector('input');
-  const filterList = document.querySelector('#filter-list');
-  
+const searchInput = document.querySelector('input');
+const filterList = document.querySelector('#filter-list');
+
   searchInput.addEventListener('input', (event) => {
     const searchTerm = event.target.value;
     const options = filterList.querySelectorAll('a');
     let hasMatch = false;
-
+    
     if (searchTerm === '') {
       filterList.style.display = 'none';
       return;
     }
-
-    searchInput.addEventListener('blur', () => {
-      filterList.style.display = 'none';
-    });
 
     for (let i = 1; i < options.length; i++) {
       if (options[i].textContent.toLowerCase().includes(searchTerm.toLowerCase())) {
