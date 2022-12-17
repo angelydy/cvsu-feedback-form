@@ -9,12 +9,19 @@ body {
 
 body .buttons {
   background-color: #FEB04D;
-  border-radius: 20px;
+  border-radius: 10px;
   border-style: none;
   color: #1B651B;
   font-weight: 700;
   padding: 1em 2em;
   cursor: pointer;
+}
+
+body .buttons:hover {
+  color: #FEB04D;
+  background-color: #1B651B;
+  -webkit-transition: 0.4s ease-in-out all;
+  transition: 0.4s ease-in-out all;
 }
 
 body .main-container {
@@ -26,6 +33,8 @@ body .main-container nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -46,16 +55,24 @@ body .main-container nav a {
 
 body .main-container nav .logIn {
   background-color: #FEB04D;
-  border-bottom-left-radius: 20px;
-  border-top-left-radius: 20px;
+  border-radius: 10px;
   padding: 0.5em 2em;
   color: #1B651B;
+}
+
+body .main-container nav .logIn:hover {
+  color: #FEB04D;
+  background-color: #1B651B;
+  -webkit-transition: 0.4s ease-in-out all;
+  transition: 0.4s ease-in-out all;
 }
 
 body .main-container .hero-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -102,9 +119,9 @@ body .main-container .hero-section .image-container img {
 }
 
 body .main-container .search-block {
-  margin-top: 10em;
+  margin-top: 8em;
   width: 100%;
-  height: 20em;
+  height: 25em;
   border-radius: 20px;
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(235, 162, 69, 0.8)), to(rgba(235, 162, 69, 0.8))), url(/assets/Image10.png);
   background: linear-gradient(0deg, rgba(235, 162, 69, 0.8), rgba(235, 162, 69, 0.8)), url(/assets/Image10.png);
@@ -112,6 +129,47 @@ body .main-container .search-block {
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
+}
+
+body .main-container .search-block .search-box {
+  width: 50%;
+  position: absolute;
+  bottom: -30px;
+  left: 25%;
+  border-style: none;
+  border: none;
+  padding: 1.7em;
+  border-radius: 10px;
+  -webkit-filter: drop-shadow(-26px 369px 148px rgba(0, 0, 0, 0.02)) drop-shadow(-15px 208px 125px rgba(0, 0, 0, 0.07)) drop-shadow(-6px 92px 93px rgba(0, 0, 0, 0.11)) drop-shadow(-2px 23px 51px rgba(0, 0, 0, 0.13)) drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.13));
+          filter: drop-shadow(-26px 369px 148px rgba(0, 0, 0, 0.02)) drop-shadow(-15px 208px 125px rgba(0, 0, 0, 0.07)) drop-shadow(-6px 92px 93px rgba(0, 0, 0, 0.11)) drop-shadow(-2px 23px 51px rgba(0, 0, 0, 0.13)) drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.13));
+}
+
+body .main-container .search-block .search-box:focus {
+  outline: none;
+}
+
+body .main-container .search-block .search-box::-webkit-input-placeholder {
+  color: #1B651B;
+  font-family: 'Poppins', sans-serif;
+}
+
+body .main-container .search-block .search-box:-ms-input-placeholder {
+  color: #1B651B;
+  font-family: 'Poppins', sans-serif;
+}
+
+body .main-container .search-block .search-box::-ms-input-placeholder {
+  color: #1B651B;
+  font-family: 'Poppins', sans-serif;
+}
+
+body .main-container .search-block .search-box::placeholder {
+  color: #1B651B;
+  font-family: 'Poppins', sans-serif;
+}
+
+body .main-container .search-block #filter-list {
+  display: none;
 }
 
 body .main-container .search-block .green-block-overlay {
@@ -136,6 +194,8 @@ body .main-container .who-we-are {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-top: 10em;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -246,6 +306,8 @@ body footer .footer-wrapper .footer-right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 body footer .footer-wrapper .footer-right div {
