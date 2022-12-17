@@ -114,11 +114,38 @@ body {
       background-repeat: no-repeat;
       position: relative;
 
+      .filterList {
+        background-color: white;
+        position: absolute;
+        bottom: 10%;
+        z-index: 10;
+        left: 25%;
+        padding: 2em;
+        list-style: none;
+        width: 45%; 
+
+        li {
+          margin-bottom: 10px;
+
+          &:hover {
+            cursor: pointer;
+            color: #FEB04D;
+            text-decoration: underline;
+          }
+
+          a {
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+            color: #1B651B;
+          }
+        }
+      }
+
       .search-box {
         width: 50%;
         position: absolute;
         bottom: -30px;
-        left: 25%;
+        left: 23%;
         border-style: none;
         border: none;
         padding: 1.7em;

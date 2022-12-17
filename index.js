@@ -5,13 +5,31 @@
     const searchTerm = event.target.value;
     const options = filterList.querySelectorAll('a');
     let hasMatch = false;
+
+    if (searchTerm === '') {
+      filterList.style.display = 'none';
+      return;
+    }
+
+    searchInput.addEventListener('blur', () => {
+      filterList.style.display = 'none';
+    });
+
+    for (let i = 1; i < options.length; i++) {
+      if (options[i].textContent.toLowerCase().includes(searchTerm.toLowerCase())) {
+        options[i].style.display = '';
+        hasMatch = true;
+      } else {
+        options[i].style.display = 'none';
+      }
+    }
   
     options.forEach((option) => {
       if (option.textContent.toLowerCase().includes(searchTerm.toLowerCase())) {
         hasMatch = true;
       }
     });
-  
+
     filterList.style.display = (hasMatch) ? 'block' : 'none';
   });
 
