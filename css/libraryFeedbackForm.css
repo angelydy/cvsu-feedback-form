@@ -1,121 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@800&display=swap");
+
 body {
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
-  position: relative;
-  /* Modal Content */
-  /* The Close Button */
-  /* Firefox */
-}
-
-body .modal {
-  display: none;
-  /* hidden by default */
-  position: fixed;
-  /* stay in place */
-  z-index: 1;
-  /* sit on top */
-  width: 100%;
-  /* full width */
-  height: 100%;
-  /* full height */
-  background-color: rgba(0, 0, 0, 0.4);
-  /* black w/ opacity */
-}
-
-body .modal-content {
-  background-color: #fefefe;
-  margin: auto;
-  border: 1px solid #888;
-  width: 25em;
-  height: 13em;
-  border-radius: 8px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-body .modal-content .green-rectangle {
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  background-color: #1B651B;
-  width: 100%;
-  height: 3em;
-}
-
-body .modal-content p {
-  padding-top: 1em;
-  text-align: center;
-  font-family: 'NanumMyeongjo', serif;
-  font-weight: bold;
-}
-
-body .modal-content .modal-btns {
-  margin: auto;
-  width: 10em;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-top: 2em;
-}
-
-body .modal-content .modal-btns button {
-  width: 5em;
-  height: 2.5em;
-  border-radius: 8px;
-  font-weight: 700;
-  font-size: 0.8em;
-  color: black;
-  text-align: center;
-  margin: 0 0.5em;
-  font-family: 'NanumMyeongjo', serif;
-  background-color: white;
-  border-color: #E1E1E1;
-  border-width: 2px;
-  border-style: solid;
-  cursor: pointer;
-}
-
-body .modal-content .modal-btns button:hover {
-  background-color: #1B651B;
-  color: white;
-}
-
-body .close {
-  color: #1B651B;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-body .close:hover,
-body .close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-body textarea, body input {
-  resize: none;
-  outline: none;
-}
-
-body textarea:focus, body input:focus {
-  outline: none;
-}
-
-body input::-webkit-outer-spin-button,
-body input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-body input[type=number] {
-  -moz-appearance: textfield;
 }
 
 body .body-container {
@@ -127,14 +16,14 @@ body .body-container {
 body .body-container .left-div {
   height: 100vh;
   width: 30%;
-  background-image: url(/assets/cvsu-lib.png);
-  position: relative;
+  background-image: url(assets/cvsu-lib.png);
+  position: fixed;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 body .body-container .left-div .cvsu-logo {
-  width: 10em;
+  width: 8em;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -151,23 +40,25 @@ body .body-container .left-div .green-overlay {
 body .body-container .left-div .cvsu-tagline {
   font-weight: 800;
   color: #FFFFFFB2;
-  opacity: 50%;
-  font-size: 3.5em;
+  opacity: 45%;
+  font-size: 3.4em;
   position: fixed;
-  bottom: 0;
-  left: 0;
+  bottom: 0%;
+  left: .5%;
 }
 
 body .body-container .right-div {
   height: 100vh;
   position: relative;
   width: 70%;
+  left: 30%;
+  padding: 0;
 }
 
 body .body-container .right-div .cvsu-logo02 {
   width: 15em;
   position: absolute;
-  top: 2%;
+  top: 5%;
   left: 50%;
   -webkit-transform: translate(-50%, 0%);
           transform: translate(-50%, 0%);
@@ -179,7 +70,7 @@ body .body-container .right-div .form-area {
   letter-spacing: 0.145em;
   color: #FEB04D;
   text-align: center;
-  padding-top: 30vh;
+  padding-top: 27vh;
 }
 
 body .body-container .right-div form {
@@ -194,96 +85,16 @@ body .body-container .right-div form input:checked {
   font-weight: bold;
 }
 
-body .body-container .right-div form .page2, body .body-container .right-div form .page3, body .body-container .right-div form .page4, body .body-container .right-div form .page5, body .body-container .right-div form .page6 {
+body .body-container .right-div form .page2, body .body-container .right-div form .page3, body .body-container .right-div form .page4, body .body-container .right-div form .page5,  body .body-container .right-div form .page6 {
   display: none;
 }
 
 body .body-container .right-div form h1 {
   text-align: center;
   font-weight: 800;
-  font-size: 2.5em;
+  font-size: 2.4em;
   color: #1B651B;
   font-family: 'Nanum Myeongjo', serif;
-}
-
-body .body-container .right-div form .suggestions-container {
-  margin: auto;
-  width: 25em;
-  max-width: 40em;
-}
-
-body .body-container .right-div form .suggestions-container input {
-  margin: 0;
-  border-radius: 8px;
-  border-color: #E1E1E1;
-  border-width: 2px;
-  border-style: solid;
-  padding: 1em;
-}
-
-body .body-container .right-div form .suggestions-container textarea {
-  border-color: #E1E1E1;
-  width: 100%;
-  margin: auto;
-  padding-bottom: 1em;
-  border-radius: 8px;
-  padding: 1em;
-  border-style: solid;
-  border-width: 2px;
-  font-family: 'Poppins', sans-serif;
-}
-
-body .body-container .right-div form .suggestions-container .comments {
-  height: 8em;
-}
-
-body .body-container .right-div form .suggestions-container .email-num {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 27em;
-}
-
-body .body-container .right-div form .page-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 2em;
-}
-
-body .body-container .right-div form .page-nav .forward {
-  border: none;
-  background-color: transparent;
-  background-image: url(/assets/Forward.svg);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  width: 2em;
-  height: 2em;
-  cursor: pointer;
-}
-
-body .body-container .right-div form .page-nav .backward {
-  border: none;
-  background-color: transparent;
-  background-image: url(/assets/Back.svg);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  width: 2em;
-  height: 2em;
-  cursor: pointer;
-}
-
-body .body-container .right-div form .page-nav .pageNum {
-  font-size: 12px;
-  margin: auto;
-  font-weight: bold;
-}
-
-body .body-container .right-div form .page-nav button {
-  margin: auto;
 }
 
 body .body-container .right-div form .choices-container {
@@ -294,28 +105,44 @@ body .body-container .right-div form .choices-container {
           transform: translate(-50%, 10%);
 }
 
-body .body-container .right-div form .choices-container .comments {
-  width: 30em;
-  margin: auto;
+body .body-container .right-div form .choices-container .page-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 9vh;
+  padding-bottom: 15vh;
 }
 
-body .body-container .right-div .agileinfo {
-  background-color: #FEB04D;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  color: #1B651B;
+body .body-container .right-div form .choices-container .page-nav .forward {
   border: none;
-  border-radius: 8px;
-  padding: 0.5em;
-  width: 10em;
+  background-color: transparent;
+  background-image: url(assets/Forward.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 2em;
+  height: 2em;
+  cursor: pointer;
 }
 
-body .body-container .right-div .agileinfo:hover {
+body .body-container .right-div form .choices-container .page-nav .backward {
+  border: none;
+  background-color: transparent;
+  background-image: url(assets/Back.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 2em;
+  height: 2em;
   cursor: pointer;
-  color: #FEB04D;
-  background-color: #1B651B;
-  -webkit-transition: ease-in-out;
-  transition: ease-in-out;
+}
+
+body .body-container .right-div form .choices-container .page-nav .pageNum {
+  font-size: 12px;
+  margin: auto;
+  font-weight: bold;
+}
+
+body .body-container .right-div form .choices-container .page-nav button {
+  margin: auto;
 }
 
 body .body-container .right-div .socialIcons {
