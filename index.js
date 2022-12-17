@@ -21,3 +21,22 @@ var slideIndex = 1;
   setInterval(function() {
     plusSlides(1);
   }, 3000); 
+
+
+  const keywords = ["library", "CAS", "orange"];
+  const searchInput = document.getElementById("search");
+  const searchResults = document.getElementById("search-results");
+  searchInput.addEventListener("keyup", function(event) {
+    if (event.key === "Enter") {
+      searchResults.innerHTML = "";
+      const searchKeyword = searchInput.value;
+      keywords.forEach(function(keyword) {
+        if (keyword.includes(searchKeyword)) {
+          const resultElement = document.createElement("a");
+          resultElement.href = `https://cvsu-feedback-form.vercel.app/${keyword}`;
+          resultElement.textContent = keyword;
+          searchResults.appendChild(resultElement);
+        }
+      });
+    }
+  });

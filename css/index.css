@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@500;600;800&display=swap");
 body {
@@ -127,5 +128,136 @@ body .main-container .search-block .green-block-overlay p {
   font-family: 'Poppins', sans-serif;
   text-align: justify;
   line-height: 25px;
+}
+
+body .main-container .who-we-are {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .main-container .who-we-are .left {
+  width: 40%;
+}
+
+body .main-container .who-we-are .left h1 {
+  font-family: 'NanumMyeongjo', serif;
+  color: #1B651B;
+  font-size: 50px;
+  font-weight: 500;
+}
+
+body .main-container .who-we-are .left h1::after {
+  content: " ––––";
+  font-weight: 400;
+  color: #FEB04D;
+}
+
+body .main-container .who-we-are .left p {
+  font-family: 'Poppins', sans-serif;
+  color: rgba(31, 31, 31, 0.9);
+  line-height: 30px;
+  text-align: justify;
+  font-size: 15px;
+}
+
+body .main-container .who-we-are .right-img img {
+  width: 80%;
+  height: auto;
+}
+
+body footer {
+  font-family: 'Poppins', sans-serif;
+  margin-top: 10em;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #FEB04D;
+}
+
+body footer .footer-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 6vw;
+  margin-right: 6vw;
+  padding: 4em 0;
+}
+
+body footer .footer-wrapper .footer-left {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+body footer .footer-wrapper .footer-left p {
+  color: #1B651B;
+  font-size: 15px;
+  font-family: 'NanumMyeongjo', serif;
+  font-size: 20px;
+}
+
+body footer .footer-wrapper .footer-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body footer .footer-wrapper .footer-column h4 {
+  color: white;
+}
+
+body footer .footer-wrapper .footer-column a {
+  margin-bottom: 10px;
+  font-family: 'Poppins', sans-serif;
+  color: #1B651B;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+body footer .footer-wrapper .footer-column a:hover {
+  color: white;
+}
+
+body footer .footer-wrapper .footer-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body footer .footer-wrapper .footer-right div {
+  margin: 0 2em;
+}
+
+body footer .footer-wrapper .footer-right .footer-column-socials a {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body footer .footer-wrapper .footer-right .footer-column-socials a img {
+  margin-right: 20px;
+}
+
+body .copyright {
+  padding: 1em;
+  background-color: #1B651B;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  color: #FEB04D;
+  font-size: 14px;
 }
 /*# sourceMappingURL=index.css.map */

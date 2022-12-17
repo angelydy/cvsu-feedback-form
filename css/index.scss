@@ -116,5 +116,119 @@ body {
         }
       }
     }
+
+    .who-we-are {
+      display: flex;
+      margin-top: 10em;
+      justify-content: space-between;
+
+      .left {
+        width: 40%;
+        h1 {
+          font-family: 'NanumMyeongjo', serif;
+          color: #1B651B;
+          font-size: 50px;
+          font-weight: 500;
+
+          &::after {
+            content: " ––––";
+            font-weight: 400;
+            color: #FEB04D;
+          }
+        }
+
+        p {
+          font-family: 'Poppins', sans-serif;
+          color: rgba(31, 31, 31, 0.9);
+          line-height: 30px;
+          text-align: justify;
+          font-size: 15px;
+        }
+      }
+
+      .right-img {
+        img {
+          width: 80%;
+          height: auto;
+        }
+      }
+    }
+  }
+
+  footer {
+    font-family: 'Poppins', sans-serif;
+    margin-top: 10em;
+    flex-wrap: wrap;
+    background-color: #FEB04D;
+    
+    .footer-wrapper {
+      display: flex;
+      justify-content: space-between;
+      margin-left: 6vw;
+      margin-right: 6vw;
+      padding: 4em 0;
+
+      .footer-left {
+        margin-top: auto;
+        margin-bottom: auto;
+
+        p {
+          color: #1B651B;
+          font-size: 15px;
+          font-family: 'NanumMyeongjo', serif;
+          font-size: 20px;
+        }
+      }
+      
+      .footer-column {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        h4 {
+          color: white;
+        }
+    
+        a {
+          margin-bottom: 10px;
+          font-family: 'Poppins', sans-serif;
+          color: #1B651B;
+          text-decoration: none;
+          font-weight: 600;
+  
+          &:hover {
+            color: white;
+          }
+        }
+      }
+
+  
+      .footer-right {
+        display: flex;
+  
+        div {
+          margin: 0 2em;
+        }
+
+        .footer-column-socials {
+          a {
+            flex-direction: row;
+
+            img {
+              margin-right: 20px;
+            }
+          }
+        }
+      } 
+    }
+  }
+
+  .copyright {
+    padding: 1em;
+    background-color: #1B651B;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: #FEB04D;
+    font-size: 14px;
   }
 }
