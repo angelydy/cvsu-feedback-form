@@ -1,125 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@800&display=swap");
-
 body {
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
-  position: relative;
-  /* Modal Content */
-  /* The Close Button */
-  /* Firefox */
 }
-
-body .modal {
-  display: none;
-  /* hidden by default */
-  position: fixed;
-  /* stay in place */
-  z-index: 1;
-  /* sit on top */
-  width: 100%;
-  /* full width */
-  height: 100%;
-  /* full height */
-  background-color: rgba(0, 0, 0, 0.4);
-  /* black w/ opacity */
-}
-
-body .modal-content {
-  background-color: #fefefe;
-  margin: auto;
-  border: 1px solid #888;
-  width: 25em;
-  height: 13em;
-  border-radius: 8px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-body .modal-content .green-rectangle {
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  background-color: #1B651B;
-  width: 100%;
-  height: 3em;
-}
-
-body .modal-content p {
-  padding-top: 1em;
-  text-align: center;
-  font-family: 'NanumMyeongjo', serif;
-  font-weight: bold;
-}
-
-body .modal-content .modal-btns {
-  margin: auto;
-  width: 10em;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-top: 2em;
-}
-
-body .modal-content .modal-btns button {
-  width: 5em;
-  height: 2.5em;
-  border-radius: 8px;
-  font-weight: 700;
-  font-size: 0.8em;
-  color: black;
-  text-align: center;
-  margin: 0 0.5em;
-  font-family: 'NanumMyeongjo', serif;
-  background-color: white;
-  border-color: #E1E1E1;
-  border-width: 2px;
-  border-style: solid;
-  cursor: pointer;
-}
-
-body .modal-content .modal-btns button:hover {
-  background-color: #1B651B;
-  color: white;
-}
-
-body .close {
-  color: #1B651B;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-body .close:hover,
-body .close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-body textarea, body input {
-  resize: none;
-  outline: none;
-}
-
-body textarea:focus, body input:focus {
-  outline: none;
-}
-
-body input::-webkit-outer-spin-button,
-body input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-body input[type=number] {
-  -moz-appearance: textfield;
-  appearance: textfield;
-}
-
 
 body .body-container {
   display: -webkit-box;
@@ -128,25 +13,21 @@ body .body-container {
 }
 
 body .body-container .left-div {
-  height: 100vh;
+  height: 100%;
   width: 30%;
   background-image: url(assets/cvsu-lib.png);
-  position: fixed;
+  position: relative;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 body .body-container .left-div .cvsu-logo {
-  width: 8em;
+  width: 10em;
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-}
-
-body .body-container .left-div .cvsu-logo:hover {
- opacity: 0.7;
 }
 
 body .body-container .left-div .green-overlay {
@@ -158,25 +39,23 @@ body .body-container .left-div .green-overlay {
 body .body-container .left-div .cvsu-tagline {
   font-weight: 800;
   color: #FFFFFFB2;
-  opacity: 45%;
-  font-size: 3.4em;
+  opacity: 50%;
+  font-size: 3.5em;
   position: fixed;
-  bottom: 0%;
-  left: .5%;
+  bottom: 0;
+  left: 0;
 }
 
 body .body-container .right-div {
   height: 100vh;
   position: relative;
-  width: 67%;
-  left: 33%;
-  padding: 0;
+  width: 70%;
 }
 
 body .body-container .right-div .cvsu-logo02 {
   width: 15em;
   position: absolute;
-  top: 3%;
+  top: 2%;
   left: 50%;
   -webkit-transform: translate(-50%, 0%);
           transform: translate(-50%, 0%);
@@ -188,7 +67,7 @@ body .body-container .right-div .form-area {
   letter-spacing: 0.145em;
   color: #FEB04D;
   text-align: center;
-  padding-top: 25vh;
+  padding-top: 30vh;
 }
 
 body .body-container .right-div form {
@@ -203,20 +82,20 @@ body .body-container .right-div form input:checked {
   font-weight: bold;
 }
 
-body .body-container .right-div form .page2, body .body-container .right-div form .page3, body .body-container .right-div form .page4, body .body-container .right-div form .page5,  body .body-container .right-div form .page6 {
+body .body-container .right-div form .page2, body .body-container .right-div form .page3, body .body-container .right-div form .page4, body .body-container .right-div form .page5 {
   display: none;
 }
 
 body .body-container .right-div form h1 {
   text-align: center;
   font-weight: 800;
-  font-size: 2.4em;
+  font-size: 2.5em;
   color: #1B651B;
   font-family: 'Nanum Myeongjo', serif;
 }
 
 body .body-container .right-div form .choices-container {
-  width: 20em;
+  width: 15em;
   position: absolute;
   left: 50%;
   -webkit-transform: translate(-50%, 10%);
@@ -227,9 +106,7 @@ body .body-container .right-div form .choices-container .page-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 5vh;
-  padding-bottom: 15vh;
-
+  margin-top: 2em;
 }
 
 body .body-container .right-div form .choices-container .page-nav .forward {
@@ -243,10 +120,6 @@ body .body-container .right-div form .choices-container .page-nav .forward {
   cursor: pointer;
 }
 
-body .body-container .right-div form .choices-container .page-nav .forward:hover {
-  transform: scale(1.3);
-}
-
 body .body-container .right-div form .choices-container .page-nav .backward {
   border: none;
   background-color: transparent;
@@ -258,15 +131,10 @@ body .body-container .right-div form .choices-container .page-nav .backward {
   cursor: pointer;
 }
 
-body .body-container .right-div form .choices-container .page-nav .backward:hover {
-  transform: scale(1.3);
-}
-
 body .body-container .right-div form .choices-container .page-nav .pageNum {
-  font-size: 11px;
-  margin: auto 0 auto 0;
+  font-size: 12px;
+  margin: auto;
   font-weight: bold;
-  font-family: 'Poppins', 'Segoe UI', sans-serif;
 }
 
 body .body-container .right-div form .choices-container .page-nav button {
@@ -291,6 +159,5 @@ body .body-container .right-div .socialIcons img {
 body .body-container .right-div .socialIcons img:hover {
   opacity: 0.5;
   cursor: pointer;
-  transform: scale(1.2);
 }
 /*# sourceMappingURL=libraryFeedbackForm.css.map */

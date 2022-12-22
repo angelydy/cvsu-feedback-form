@@ -9,19 +9,19 @@ body {
 
 body .buttons {
   background-color: #FEB04D;
-  border-radius: 5px;
+  border-radius: 10px;
   border-style: none;
   color: #1B651B;
   font-weight: 700;
   padding: 1em 2em;
   cursor: pointer;
-  font-family: 'Poppins', 'Segoe UI', 'Helvetica', sans-serif;
 }
 
 body .buttons:hover {
   color: #FEB04D;
   background-color: #1B651B;
-  transition: 0.25s ease-in-out all;
+  -webkit-transition: 0.4s ease-in-out all;
+  transition: 0.4s ease-in-out all;
 }
 
 body .main-container {
@@ -54,9 +54,8 @@ body .main-container nav a {
 }
 
 body .main-container nav .logIn {
-    font-family: 'Poppins', 'Segoe UI', 'Helvetica', sans-serif;
   background-color: #FEB04D;
-  border-radius: 5px;
+  border-radius: 10px;
   padding: 0.5em 2em;
   color: #1B651B;
 }
@@ -65,7 +64,7 @@ body .main-container nav .logIn:hover {
   color: #FEB04D;
   background-color: #1B651B;
   -webkit-transition: 0.4s ease-in-out all;
-  transition: 0.25s ease-in-out all;
+  transition: 0.4s ease-in-out all;
 }
 
 body .main-container .hero-section {
@@ -135,14 +134,12 @@ body .main-container .search-block {
 body .main-container .search-block .filterList {
   background-color: white;
   position: absolute;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  bottom: 5.5%;
+  bottom: 10%;
   z-index: 10;
-  left: 23%;
+  left: 25%;
   padding: 2em;
   list-style: none;
-  width: 48.6%;
+  width: 45%;
 }
 
 body .main-container .search-block .filterList li {
@@ -151,24 +148,15 @@ body .main-container .search-block .filterList li {
 
 body .main-container .search-block .filterList li:hover {
   cursor: pointer;
-  text-decoration: none;
+  color: #FEB04D;
+  text-decoration: underline;
 }
 
 body .main-container .search-block .filterList li a {
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
   color: #1B651B;
-  font-size: 15px;
-  -webkit-transition: all 0.25s linear;
-	transition: all 0.25s linear;
 }
-
-body .main-container .search-block .filterList li a:hover {
-  text-decoration: none;
-  font-family: 'Poppins', sans-serif;
-  color: #FEB04D;
-}
-
 
 body .main-container .search-block .search-box {
   width: 50%;
@@ -378,29 +366,4 @@ body .copyright {
   color: #FEB04D;
   font-size: 14px;
 }
-
-/* arrow to proceed to top */
-
-.arrow {
-  width: 3em; 
-  height: 3em;
-  font-size: 20px;
-  border: none;
-  position: fixed; 
-  z-index: 10000; 
-  background-color: #1B651B;
-  color: #fff;
-  bottom: 2%;
-  right: 1%;
-  border-radius: 100px;
-  cursor: pointer;
-  padding-bottom: 5px;
-  transition: 0.25s ease-in-out all;
-}
-
-.arrow:hover {
-  background-color: #FEB04D;
-  transform: scale(1.2);
-}
-
 /*# sourceMappingURL=index.css.map */

@@ -42,17 +42,21 @@ if(isset($_POST['submit'])) {
         @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
         @import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@800&display=swap");
 
+        body {
+          background-image: url(/fb_library/admin/images/update_bg.png);
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+        }
+
         * {
             font-family: 'Poppins', 'Segoe UI', 'Helvetica', sans-serif;
             font-size: 1vw;
             box-sizing: border-box;
-        }
-
-        .update-body {
-        width: 100%;
-        position: fixed;
-        -webkit-transform: translate(0%, 70%);
-          transform: translate(0%, 70%);
         }
 
         ul li {
@@ -110,9 +114,44 @@ if(isset($_POST['submit'])) {
         background: #1B651B;
         transition: all 0.4s;
         }
+
+        .update-body {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        } 
+
+        .navbar {
+        position: absolute;
+        top: 2%;
+        left: 50%;
+        transform: translate(-50%, -2%);
+        }
+
+        .socialIcons {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .socialIcons a {
+        text-align: center;
+        margin: 0 1em;
+        }
+
     </style>
     </head>
     <body>
+      <div class="navbar">
+        <img src="/assets/cvsu-logo02.png" alt="" class="cvsu-logo">
+        <div class="socialIcons">
+          <a href="https://www.facebook.com/CaviteStateU" target="_blank"><img src="/assets/Facebook.svg" alt="" srcset=""></a>
+            <a href="https://www.youtube.com/channel/UC6p5srphejusQzaulrxmtow" target="_blank"><img src="/assets/Youtube.svg" alt="" srcset=""></a>
+            <a href="https://plus.google.com/+CaviteStateUniversityMainCampus" target="_blank"><img src="/assets/Google.svg" alt="" srcset=""></a>
+        </div>
+      </div>
     <form method="post" class="update-body">
             <ul class="additional_info_area" style="list-style-type: none;">
               <li class="other_inputs_area">
