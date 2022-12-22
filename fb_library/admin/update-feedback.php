@@ -141,6 +141,11 @@ if(isset($_POST['submit'])) {
         margin: 0 1em;
         }
 
+        .socialIcons a:hover {
+          opacity: 40%;
+          cursor: pointer;
+        }
+
     </style>
     </head>
     <body>
