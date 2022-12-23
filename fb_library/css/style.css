@@ -165,7 +165,7 @@ ul li .check {
   color: #FFC107;
 }
 
-.agile_form input[type="submit"] {
+.agile_form input[type="button"] {
 	width:10em;
 	min-width: 10em;
     outline: none; 
@@ -181,7 +181,7 @@ ul li .check {
 	transition: 0.25s ease-in-out all;
 }
 
-.agile_form input[type="submit"]:hover{
+.agile_form input[type="button"]:hover{
 	color: #fff;
 	background: #1B651B;
 }

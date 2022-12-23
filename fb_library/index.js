@@ -3,9 +3,10 @@ function submitBtnClick() {
   // Show the modal only if the user answered the the email and number inputs
   var emailInput = document.getElementById("email").value;
   var numberInput = document.getElementById("stu_num").value;
-  if (emailInput == "" || numberInput == "") {
+  var dateInput = document.getElementById("date").value;
+  if (emailInput == "" || numberInput == "" || dateInput == "") {
     //alert answer all required questions
-    alert("Please answer all required questions");
+    alert("Please answer all required questions.");
   } else {
     document.getElementById("myModal").style.display = "block";
     //blur the background

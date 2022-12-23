@@ -12,12 +12,12 @@
 <link rel="shortcut icon" href="assets/cvsu-logo.png" type="image/x-icon">
 </head>
 
-<body style="overflow-y: scroll;">
+<body style="overflow-y: scroll; overflow-x: hidden;">
 
-  <div class="modal" id="myModal" hidden>
+  <div class="modal" id="myModal">
     <div class="modal-content">
       <div class="green-rectangle"></div>
-      <p>Are you sure you want to <br> submit this form?</p>
+      <p>Are you sure you that want to <br> submit this form?</p>
       <div class="modal-btns">
         <button class="modal-button" id="yes-button" onclick="yesBtnClick()">Yes</button>
         <button class="modal-button" id="no-button" onclick="noBtnClick()">No</button>
@@ -246,17 +246,17 @@
                 <center>
                   <div style="display: inline-block; align-items: left;">
                       <p style="text-align: left; font-size: 15px;"> Full Name <br>
-                        <input type="text" placeholder="John G. Sy (Optional)" name="name" />
+                        <input type="text" placeholder="John G. Sy (Optional)" name="name" autocomplete="off"/>
                       </p>
                   </div>
                   <div style="display: inline-block;">
                       <p style="text-align: left; font-size: 15px;"> CvSU Email <br>
-                          <input type="email" placeholder="cvsu@cvsu.edu.ph" name="email" required />
+                          <input type="email" placeholder="cvsu@cvsu.edu.ph" name="email" id="email" autocomplete="off" required />
                       </p>
                   </div>
                   <div style="display: inline-block;">
                       <p style="text-align: left; font-size: 15px;"> Student Number <br>
-                          <input type="text" maxlength="9" minlength="9" placeholder="2020*****" name="stu_num" class="input-for-stunum" required />
+                          <input type="text" maxlength="9" minlength="9" placeholder="2020*****" name="stu_num" class="input-for-stunum" id="stu_num" autocomplete="off" required />
                       </p> 
                   </div>
                 </center>
@@ -266,24 +266,24 @@
                 <center>
                   <div style="display: inline-block;">
                       <p style="text-align: left; font-size: 15px;"> Purpose of Visit <br>
-                          <input type="text" placeholder="Ex. Assistance" name="purpose_of_visit" />
+                          <input type="text" placeholder="Ex. Assistance" name="purpose_of_visit" autocomplete="off"/>
                       </p>
                   </div>
                   <div style="display: inline-block;">
                       <p style="text-align: left; font-size: 15px;"> Date of Visit <br>
-                          <input type="date" name="date_of_visit" required />
+                          <input type="date" name="date_of_visit" id="date" autocomplete="off" required/>
                       </p>
                   </div>
                   <div style="display: inline-block;">
                       <p style="text-align: left; font-size: 15px;"> Attending Staff <br>
-                          <input type="text" placeholder="Ms. Anna S. Lee" name="attending_staff" />
+                          <input type="text" placeholder="Ms. Anna S. Lee" name="attending_staff" autocomplete="off"/>
                       </p>
                   </div>
                 </center>
               </li>
               <li style="padding-top: 1.5vh;">
                 <center>
-                  <input type="submit" value="Submit"/>
+                  <input type="button" value="Submit" onclick="submitBtnClick()" />
                 </center>
               </li>
             </ul>
@@ -293,7 +293,7 @@
                 <div class="pageNum">
                   Page 6 of 6
                 </div>
-                <button type="button" onclick="none" class="forward" id="submit-button" style="background-image: url(assets/Forward.svg);"></button>
+                <button type="button" onclick="submitBtnClick()" class="forward" id="submit-button" style="background-image: url(assets/Forward.svg);"></button>
               </div>
             </div>
           </div>

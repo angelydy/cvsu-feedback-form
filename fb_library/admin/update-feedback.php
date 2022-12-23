@@ -33,6 +33,9 @@ if(isset($_POST['submit'])) {
 <!DOCTYPE html>
 <html>
     <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="http://mysite/style.css?id=1234">
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
@@ -42,6 +45,7 @@ if(isset($_POST['submit'])) {
         @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
         @import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@800&display=swap");
 
+        
         body {
           background-image: url(/fb_library/admin/images/update_bg.png);
           -webkit-background-size: cover;
@@ -58,6 +62,14 @@ if(isset($_POST['submit'])) {
             font-size: 1vw;
             box-sizing: border-box;
         }
+
+        .update-body {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        } 
 
         ul li {
         list-style-type: none;
@@ -115,14 +127,6 @@ if(isset($_POST['submit'])) {
         transition: all 0.4s;
         }
 
-        .update-body {
-        width: 100%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        } 
-
         .navbar {
         position: absolute;
         top: 2%;
@@ -149,7 +153,7 @@ if(isset($_POST['submit'])) {
     </style>
     </head>
     <body>
-      <div class="navbar">
+    <div class="navbar">
         <img src="/assets/cvsu-logo02.png" alt="" class="cvsu-logo">
         <div class="socialIcons">
           <a href="https://www.facebook.com/CaviteStateU" target="_blank"><img src="/assets/Facebook.svg" alt="" srcset=""></a>
@@ -195,7 +199,7 @@ if(isset($_POST['submit'])) {
               </li>
               <li style="padding-top: 1.8vh;">
                 <center>
-                  <input type="submit" value="Update" name="submit" class="update-btn2"/>
+                  <input type="submit" value="Update" name="submit" onclick="return confirm('Are you sure that you want to update this feedback?')" class="update-btn2"/>
                 </center>
               </li>
             </ul>

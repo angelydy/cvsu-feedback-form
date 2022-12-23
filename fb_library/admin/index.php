@@ -4,6 +4,7 @@
 <head>
   <meta http-equiv="Cache-control" content="no-cache">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="UTF-8">
   <title>CvSU Online Feedback - Library Admin Login</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
@@ -19,7 +20,7 @@
   </div>
   <div class="log-form">
 
-    <h2><a href="/"><img src="images/logo.png" alt="" class="index-logo"></a>&nbsp Login to your account</h2>
+    <h2><a href="/fb_system"><img src="images/logo.png" alt="" class="index-logo"></a>&nbsp Login to your account</h2>
     <form action="checklogin.php" method="POST">
       <input type="email" title="Input admin email." placeholder="Admin Email" name="email" autocomplete="off" />
       <input type="password" title="Input admin password." placeholder="Password" name="password" autocomplete="off" />
