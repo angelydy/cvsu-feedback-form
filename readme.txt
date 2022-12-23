@@ -12,3 +12,7 @@ dec. 22
 	- will add overall percentage (in pie graph) ??
 	- update responsive formats
 	- duplication
+
+dec. 22
+
+- changed admin's update page ui design

@@ -45,7 +45,6 @@ if(isset($_POST['submit'])) {
         @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
         @import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@800&display=swap");
 
-        
         body {
           background-image: url(/fb_library/admin/images/update_bg.png);
           -webkit-background-size: cover;
