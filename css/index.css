@@ -33,38 +33,14 @@ body .main-container nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   padding-top: 2em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 body .main-container nav .cvsu-logo {
   width: 5em;
-}
-
-body .main-container nav a {
-  margin: 0 1em;
-  font-family: 'Poppins', sans-serif;
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-body .main-container nav .logIn {
-  background-color: #FEB04D;
-  border-radius: 10px;
-  padding: 0.5em 2em;
-  color: #1B651B;
-}
-
-body .main-container nav .logIn:hover {
-  color: #FEB04D;
-  background-color: #1B651B;
-  -webkit-transition: 0.4s ease-in-out all;
-  transition: 0.4s ease-in-out all;
 }
 
 body .main-container .hero-section {

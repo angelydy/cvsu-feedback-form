@@ -28,33 +28,11 @@ body {
 
     nav {
       display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
       padding-top: 2em;
+      justify-content: center;
 
       .cvsu-logo {
         width: 5em;
-      }
-
-      a {
-        margin: 0 1em;
-        font-family: 'Poppins', sans-serif;
-        color: white;
-        text-decoration: none;
-        font-weight: 600;
-      }
-
-      .logIn {
-        background-color: #FEB04D;
-        border-radius: 10px;
-        padding: 0.5em 2em;
-        color: #1B651B;
-
-        &:hover {
-          color: #FEB04D;
-          background-color: #1B651B;
-          transition: 0.4s ease-in-out all;
-        }
       }
     }
 
