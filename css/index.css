@@ -34,9 +34,6 @@ body .main-container nav {
   display: -ms-flexbox;
   display: flex;
   padding-top: 2em;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 body .main-container nav .cvsu-logo {
@@ -357,6 +354,11 @@ body .copyright {
 }
 
 @media screen and (max-width: 700px) {
+  body .main-container nav {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   body .main-container .hero-section {
     display: block;
     -ms-flex-wrap: nowrap;
@@ -407,7 +409,7 @@ body .copyright {
     font-size: 2.5em;
   }
   body .main-container .who-we-are .left p {
-    font-size: 13px;
+    font-size: 14px;
   }
   body .main-container .who-we-are .right-img {
     display: -webkit-box;
@@ -437,6 +439,12 @@ body .copyright {
   body .main-container .who-we-are .left {
     width: 100%;
   }
+  body .main-container .who-we-are .left h1 {
+    font-size: 2.5em;
+  }
+  body .main-container .who-we-are .left p {
+    font-size: 14px;
+  }
   body .main-container .who-we-are .right-img {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -450,7 +458,7 @@ body .copyright {
     width: 100%;
   }
   body .main-container .who-we-are .right-img img {
-    width: 50%;
+    width: 60%;
     margin-top: 2em;
   }
   body footer {

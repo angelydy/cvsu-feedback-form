@@ -29,7 +29,6 @@ body {
     nav {
       display: flex;
       padding-top: 2em;
-      justify-content: center;
 
       .cvsu-logo {
         width: 5em;
@@ -299,6 +298,11 @@ body {
 @media screen and (max-width: 700px) {
   body {
     .main-container {
+
+      nav {
+        justify-content: center;
+      }
+      
       .hero-section {
         display: block;
         flex-wrap: nowrap;
@@ -358,7 +362,7 @@ body {
           }
 
           p{
-            font-size: 13px;
+            font-size: 14px;
           }
         }
 
@@ -391,6 +395,14 @@ body {
 
         .left {
           width: 100%;
+
+          h1 {
+            font-size: 2.5em;
+          }
+
+          p{
+            font-size: 14px;
+          }
         }
 
         .right-img {
@@ -400,7 +412,7 @@ body {
           width: 100%;
 
           img {
-            width: 50%;
+            width: 60%;
             margin-top: 2em;
           }
         }
