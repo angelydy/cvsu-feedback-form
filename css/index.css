@@ -386,8 +386,12 @@ body .copyright {
     opacity: 20%;
   }
   body .main-container .search-block {
-    height: 50em;
+    height: 40em;
     border-radius: 10px;
+  }
+  body .main-container .search-block .green-block-overlay p {
+    text-align: left;
+    font-size: 1em;
   }
   body .main-container .search-block .search-box {
     width: 80%;
@@ -398,6 +402,12 @@ body .copyright {
   }
   body .main-container .who-we-are .left {
     width: 100%;
+  }
+  body .main-container .who-we-are .left h1 {
+    font-size: 2.5em;
+  }
+  body .main-container .who-we-are .left p {
+    font-size: 13px;
   }
   body .main-container .who-we-are .right-img {
     display: -webkit-box;

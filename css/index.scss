@@ -331,8 +331,15 @@ body {
       }
 
       .search-block {
-        height: 50em;
+        height: 40em;
         border-radius: 10px;
+
+        .green-block-overlay {
+          p {
+            text-align: left;
+            font-size: 1em;
+          }
+        }
 
         .search-box {
           width: 80%;
@@ -345,6 +352,14 @@ body {
 
         .left {
           width: 100%;
+
+          h1 {
+            font-size: 2.5em;
+          }
+
+          p{
+            font-size: 13px;
+          }
         }
 
         .right-img {
