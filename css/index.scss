@@ -28,10 +28,33 @@ body {
 
     nav {
       display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
       padding-top: 2em;
 
       .cvsu-logo {
         width: 5em;
+      }
+
+      a {
+        margin: 0 1em;
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+      }
+
+      .logIn {
+        background-color: #FEB04D;
+        border-radius: 10px;
+        padding: 0.5em 2em;
+        color: #1B651B;
+
+        &:hover {
+          color: #FEB04D;
+          background-color: #1B651B;
+          transition: 0.4s ease-in-out all;
+        }
       }
     }
 
@@ -44,10 +67,7 @@ body {
       .left {
         width: 40%;
         height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-
+        margin-top: 20vh;
 
         .slogan {
           font-family: 'NanumMyeongjo', serif;
@@ -166,6 +186,7 @@ body {
 
     .who-we-are {
       display: flex;
+      flex-wrap: wrap;
       margin-top: 10em;
       justify-content: space-between;
 
@@ -196,8 +217,6 @@ body {
       .right-img {
         margin-top: auto;
         margin-bottom: auto;
-        display: flex;
-        justify-content: center;
 
         img {
           max-width: 100%;
@@ -292,135 +311,5 @@ body {
     text-align: center;
     color: #FEB04D;
     font-size: 14px;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  body {
-    .main-container {
-
-      nav {
-        justify-content: center;
-      }
-      
-      .hero-section {
-        display: block;
-        flex-wrap: nowrap;
-
-        .left {
-          width: 100%;
-          text-align: center;
-          margin-top: 0;
-          position: relative;
-
-          .left-main-container {
-            margin: auto;
-            width: 80%;
-            position: absolute;
-            top: 40%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-
-            .slogan {
-              font-size: 2em;
-            }
-          }
-        }
-    
-        .image-container {
-          right: 0;
-          width: 100%;
-          opacity: 20%;      
-        }
-      }
-
-      .search-block {
-        height: 40em;
-        border-radius: 10px;
-
-        .green-block-overlay {
-          p {
-            text-align: left;
-            font-size: 1em;
-          }
-        }
-
-        .search-box {
-          width: 80%;
-          left: 3%;
-        }
-      }
-
-      .who-we-are {
-        display: block;
-
-        .left {
-          width: 100%;
-
-          h1 {
-            font-size: 2.5em;
-          }
-
-          p{
-            font-size: 14px;
-          }
-        }
-
-        .right-img {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          width: 100%;
-
-          img {
-            width: 60%;
-            margin-top: 2em;
-          }
-        }
-      }
-    }
-
-    footer {
-      margin-top: 5em;
-    }
-  }
-}
-
-//add media query with minimum and maximum width
-@media screen and (min-width: 701px) and (max-width: 800px) {
-  body {
-    .main-container {
-      .who-we-are {
-        display: block;
-
-        .left {
-          width: 100%;
-
-          h1 {
-            font-size: 2.5em;
-          }
-
-          p{
-            font-size: 14px;
-          }
-        }
-
-        .right-img {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          width: 100%;
-
-          img {
-            width: 60%;
-            margin-top: 2em;
-          }
-        }
-      }
-    }
-
-    footer {
-      margin-top: 5em;
-    }
   }
 }

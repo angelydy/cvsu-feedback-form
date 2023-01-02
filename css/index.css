@@ -9,19 +9,19 @@ body {
 
 body .buttons {
   background-color: #FEB04D;
-  border-radius: 10px;
+  border-radius: 5px;
   border-style: none;
   color: #1B651B;
   font-weight: 700;
   padding: 1em 2em;
   cursor: pointer;
+  font-family: 'Poppins', 'Segoe UI', 'Helvetica', sans-serif;
 }
 
 body .buttons:hover {
   color: #FEB04D;
   background-color: #1B651B;
-  -webkit-transition: 0.4s ease-in-out all;
-  transition: 0.4s ease-in-out all;
+  transition: 0.25s ease-in-out all;
 }
 
 body .main-container {
@@ -112,16 +112,17 @@ body .main-container .search-block {
   background-repeat: no-repeat;
   position: relative;
 }
-
 body .main-container .search-block .filterList {
   background-color: white;
   position: absolute;
-  bottom: 10%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  bottom: 5.5%;
   z-index: 10;
-  left: 25%;
-  padding: 2em;
+  left: 23%;
+  padding: 1.7em;
   list-style: none;
-  width: 45%;
+  width: 49.35%;
 }
 
 body .main-container .search-block .filterList li {
@@ -130,14 +131,22 @@ body .main-container .search-block .filterList li {
 
 body .main-container .search-block .filterList li:hover {
   cursor: pointer;
-  color: #FEB04D;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 body .main-container .search-block .filterList li a {
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
   color: #1B651B;
+  font-size: 15px;
+  -webkit-transition: all 0.25s linear;
+	transition: all 0.25s linear;
+}
+
+body .main-container .search-block .filterList li a:hover {
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  color: #FEB04D;
 }
 
 body .main-container .search-block .search-box {
@@ -353,7 +362,34 @@ body .copyright {
   font-size: 14px;
 }
 
-@media screen and (max-width: 700px) {
+
+/* arrow to proceed to top */
+
+.arrow {
+  width: 3em; 
+  height: 3em;
+  font-size: 20px;
+  border: none;
+  position: fixed; 
+  z-index: 10000; 
+  background-color: #1B651B;
+  color: #fff;
+  bottom: 2%;
+  right: 2%;
+  border-radius: 100px;
+  cursor: pointer;
+  padding-bottom: 5px;
+  transition: 0.25s ease-in-out all;
+}
+
+.arrow:hover {
+  background-color: #FEB04D;
+  transform: scale(1.1);
+}
+
+/** end of arrow style **/
+
+@media screen and (max-width: 390px) {
   body .main-container nav {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -399,6 +435,14 @@ body .copyright {
     width: 80%;
     left: 3%;
   }
+
+  body .main-container .search-block .filterList {
+    bottom: 3%;
+    z-index: 10;
+    left: 3%;
+    width: 77.2%;
+  }
+  
   body .main-container .who-we-are {
     display: block;
   }
@@ -432,7 +476,88 @@ body .copyright {
   }
 }
 
-@media screen and (min-width: 701px) and (max-width: 800px) {
+@media screen and (width: 280px) {
+  body .main-container .search-block .search-box {
+    width: 72%;
+    left: 5%;
+  }
+
+  body .main-container .search-block .filterList {
+    bottom: 3%;
+    z-index: 10;
+    left: 5%;
+    width: 68.1%;
+  }
+}
+
+@media screen and (width: 320px) {
+  body .main-container .search-block .search-box {
+    width: 73.5%;
+    left: 5%;
+  }
+
+  body .main-container .search-block .filterList {
+    bottom: 3%;
+    z-index: 10;
+    left: 5%;
+    width: 70.2%;
+  }
+}
+
+@media screen and (min-width: 390px) and (max-width: 424px) {
+  body .main-container nav {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .main-container .hero-section {
+    display: block;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  body .main-container .hero-section .left {
+    width: 100%;
+    text-align: center;
+    margin-top: 0;
+    position: relative;
+  }
+  body .main-container .hero-section .left .left-main-container {
+    margin: auto;
+    width: 80%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  body .main-container .hero-section .left .left-main-container .slogan {
+    font-size: 2em;
+  }
+  body .main-container .hero-section .image-container {
+    right: 0;
+    width: 100%;
+    opacity: 20%;
+  }
+  body .main-container .search-block {
+    height: 40em;
+    border-radius: 10px;
+  }
+  body .main-container .search-block .green-block-overlay p {
+    text-align: left;
+    font-size: 1em;
+  }
+  body .main-container .search-block .search-box {
+    width: 80%;
+    left: 3.5%;
+  }
+
+  body .main-container .search-block .filterList {
+    bottom: 3%;
+    z-index: 10;
+    left: 3.5%;
+    width: 77.5%;
+  }
+  
   body .main-container .who-we-are {
     display: block;
   }
@@ -465,4 +590,89 @@ body .copyright {
     margin-top: 5em;
   }
 }
+
+@media screen and (min-width: 425px) and (max-width: 700px) {
+  body .main-container .search-block .search-box {
+    width: 82%;
+    left: 4%;
+  }
+
+  body .main-container .search-block .filterList {
+    bottom: 3%;
+    z-index: 10;
+    left: 4%;
+    width: 80.1%;
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 768px) {
+  body .main-container .search-block .search-box {
+    width: 87.5%;
+    left: 3%;
+  }
+
+  body .main-container .search-block .filterList {
+    bottom: 3%;
+    z-index: 10;
+    left: 3%;
+    width: 86.1%;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  body .main-container .search-block .search-box {
+    width: 88%;
+    left: 3%;
+  }
+
+  body .main-container .search-block .filterList {
+    bottom: 3%;
+    z-index: 10;
+    left: 3%;
+    width: 86.77%;
+  }
+}
+
+@media screen and (width: 912px) {
+  body .main-container .search-block .search-box {
+    width: 88%;
+    left: 3%;
+  }
+
+  body .main-container .search-block .filterList {
+    bottom: 3%;
+    z-index: 10;
+    left: 3%;
+    width: 86.8%;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  body .main-container .search-block .search-box {
+    width: 89%;
+    left: 3%;
+  }
+
+  body .main-container .search-block .filterList {
+    bottom: 3%;
+    z-index: 10;
+    left: 3%;
+    width: 88.05%;
+  }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1440px) {
+  body .main-container .search-block .search-box {
+    width: 90%;
+    left: 3%;
+  }
+
+  body .main-container .search-block .filterList {
+    bottom: 3%;
+    z-index: 10;
+    left: 3%;
+    width: 89.2%;
+  }
+}
+
 /*# sourceMappingURL=index.css.map */

@@ -61,7 +61,7 @@ body {
         letter-spacing: 0.145em;
         color: #FEB04D;
         text-align: center;
-        padding-top: 25vh;
+        padding-top: 30vh;
       }
       
       form {
@@ -141,83 +141,12 @@ body {
         padding-bottom: 1em;
         
         img {
-          margin: 0 0.5em;
+          margin: 0.5em;
 
           &:hover {
             opacity: 0.5;
             cursor: pointer;
           }
-        }
-      }
-    }
-  }
-}
-
-//mobile responsive version
-@media screen and (max-width: 1038px) {
-  body {
-    position: relative;
-    background-image: url(/fb_library/assets/cvsu-lib-mobile.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    .bottomBar {
-      display: flex;
-      justify-content: space-between;
-      padding: 2em;
-      margin-top: 2em;
-      flex-wrap: wrap;
-      padding-bottom: 1em;
-      background-color: #FEB04D;
-
-      div {
-        margin: 0.5em 0;
-      }
-    }
-
-    .adminBar {
-      bottom: 0;
-      margin-left: 0;
-      margin-bottom: 0;
-      padding-bottom: 0; 
-      position: relative;
-      padding-top: 0;
-      width: auto;
-    }
-
-    .body-container {
-      .left-div {
-        display: none;
-      }
-
-      .right-div {
-        width: 100%;
-        position: relative;
-        height: 100%;
-
-        .socialIcons {
-          position: relative;
-
-
-           a {
-            margin: auto;
-           }
-        }
-
-        form {
-          position: relative;
-
-          .choices-container {
-            position: relative;
-          }
-        }
-
-        .cvsu-logo02 {
-          position: relative;
-        }
-        .form-area {
-          padding-top: 3em;
         }
       }
     }

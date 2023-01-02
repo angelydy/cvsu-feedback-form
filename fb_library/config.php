@@ -1,7 +1,7 @@
 <?php
 ob_start(); //Turns on output buffering 
 
-$timezone = date_default_timezone_set("Europe/London");
+$timezone = date_default_timezone_set("Asia/Manila");
 
 $con = mysqli_connect("localhost", "root", "", "fb_system"); //Connection variable
 
