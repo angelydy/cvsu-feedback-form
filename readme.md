@@ -1,6 +1,7 @@
 <h1>
 	Who We Are
 </h1>
+<a href="http://www.myfeedback-cvsu.online">View Live Version Here</a>
 <p>
 	We are a team of three web developers from Cavite State University, 
 	and our goal is to make it easy for students to rate and review the 
