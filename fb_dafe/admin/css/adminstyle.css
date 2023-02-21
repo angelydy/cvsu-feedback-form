@@ -283,3 +283,19 @@ input {
 
 
 /* for update area */
+
+@media screen and (min-width: 425px) and (max-width: 1440px) {
+  #unique-body {
+    position: absolute;
+    top: 12%;
+  }
+
+  #unique-body center {
+    font-size: 1.4em;
+  }
+
+  body {
+    position: absolute;
+    top: 8%;
+  }
+}

@@ -22,7 +22,7 @@
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script> -->
 
 </head>  
-<body style="margin: 0; padding:0; background-image: url(images/main-bg.png);">  
+<body style="margin: 0; padding:0; background-image: url(images/main-bg.png);" id="unique-body">  
 
      <!-- navbar -->
 
@@ -123,7 +123,7 @@
                ?>  
           ]);  
           var options = {  
-               title: 'Quality of Accomodation',  
+               title: 'Courtesy',  
                pieHole: 0.4,
                height: 400,
                fontSize: 14,
@@ -159,7 +159,7 @@
                ?>  
           ]);  
           var options = {  
-               title: 'Quality of Assistance Provided',  
+               title: 'Service quality',  
                pieHole: 0.4,
                height: 400,
                fontSize: 14,
@@ -194,7 +194,7 @@
                ?>  
           ]);  
           var options = {  
-               title: 'Courtesy of Staff',  
+               title: 'Service timeliness',  
                pieHole: 0.4,
                height: 400,
                fontSize: 14,
@@ -229,7 +229,7 @@
                ?>  
           ]);  
           var options = {  
-               title: 'Responsiveness',  
+               title: 'Service efficiency',  
                pieHole: 0.4,
                height: 400,
                fontSize: 14,
@@ -264,7 +264,7 @@
                ?>  
           ]);  
           var options = {  
-               title: 'Preparedness',  
+               title: 'Cleanliness and comfort',  
                pieHole: 0.4,
                height: 400,
                fontSize: 14,
